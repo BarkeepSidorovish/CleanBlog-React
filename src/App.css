@@ -71,3 +71,19 @@ footer p {
 home {
   color: white;
 }
+
+.page-selector {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+}
+
+.navlist .link {
+  display: block;
+  padding: 8px;
+}
