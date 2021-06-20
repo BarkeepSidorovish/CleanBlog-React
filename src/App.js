@@ -18,8 +18,9 @@ function App() {
   useEffect(() => {
       const fetchPosts = async() => {
           setLoading(true);
-          const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
-          setArticles(res.data);
+          const res = await axios.get("http://localhost:8000/articles/");//https://jsonplaceholder.typicode.com/posts");
+          console.log(res)
+          setArticles(res.data.data);
           setLoading(false);
       }
       fetchPosts();

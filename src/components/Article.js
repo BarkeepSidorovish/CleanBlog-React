@@ -15,6 +15,8 @@ export default function Article({ article, loading }) {
 
         console.log(currentArticle)
         return <h2>Loading...</h2>
+    } else if (article[id - 1] === undefined) {
+        return <p>Article introuvable</p>
     } else {
 
         return (
